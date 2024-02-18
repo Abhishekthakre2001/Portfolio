@@ -243,7 +243,9 @@ nav{
 .image img{
     width: 380px;
     height: 380px;
+    background-color: cadetblue;
     object-fit: contain;
+    border-radius: 50%;
 }
 @keyframes imgFloat {
     50%{
@@ -400,6 +402,7 @@ h3{
 .contact-info:hover.contact-info::after{
     bottom: 0;
 }
+.project-box:hover.project-box a,
 .project-box:hover.project-box i,
 .project-box:hover.project-box>h3,
 .project-box:hover.project-box>label{
@@ -633,4 +636,21 @@ footer{
     .input-field{
         width: 100%;
     }
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.internship{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    overflow: hidden;
 }
